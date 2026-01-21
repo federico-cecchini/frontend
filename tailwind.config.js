@@ -13,6 +13,7 @@ export default {
         'gradient-start-bg': '#67A7E7',
         'closed': '#F56565',
         'light-secondary-bg': '#F6F7F8',
+        'degree-bg': '#67A7E7'
       },
       fontFamily: {
         'Poppins': ["Poppins", "sans-serif"],

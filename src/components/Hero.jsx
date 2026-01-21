@@ -4,24 +4,30 @@ import '../App.css'
 
 function Hero({title, subtitle, image, text}) {
     return (
-        <div className="py-16 px-6 flex flex-col gap-10 text-center bg-cover bg-no-repeat" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(./background.jpg)`}}>
-            <div className="font-Poppins font-bold text-2xl text-white md:text-5xl">
-                <h1>{title}</h1>
-                <h1 className="bg-gradient-to-r from-gradient-start-bg to-white bg-clip-text text-transparent">{subtitle}</h1>
+        <section className={`py-16 px-6 flex ${image ? 'justify-between' : 'justify-center'} bg-cover bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(./background.jpg)`}}>
+            <div className='flex flex-col gap-10'>
+                <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl ${image ? 'text-left' : 'text-center'}`}>
+                    {
+                        title.split('\\n').map((line, index) => (
+                            <h1 key={index}>{line}</h1>
+                        ))
+                    }
+                    <h1 className="bg-gradient-to-r from-gradient-start-bg to-white bg-clip-text text-transparent">{subtitle}</h1>
+                </div>
+                <section className='md:text-2xl'>
+                    {
+                        text.split('\n').map((line, index) => (
+                            <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 ${image ? 'text-left' : 'text-center'}`}>{line}</p>
+                        ))
+                    }
+                </section>
+                <div className={`flex flex-col md:flex-row md:justify-center gap-3 ${image ? 'md:!justify-start' : ''}`}>
+                    <CTA to={'whatsapp'} text={"Contattami"}/>
+                    <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={"Scopri gli Orari"}/>
+                </div>
             </div>
-            <section className='md:text-2xl'>
-                {
-                    text.split('\n').map((line, index) => (
-                        <p key={index} className="font-Montserrat font-normal text-white  !text-opacity-55">{line}</p>
-                    ))
-                }
-                {image && <img src={image} alt="Hero Image" className="hero-image" />}
-            </section>
-            <div className="flex flex-col md:flex-row md:justify-center gap-3">
-                <CTA to={'whatsapp'} text={"Contattami"}/>
-                <SecondaryButton to={'about'} text={"Scopri gli Orari"}/>
-            </div>
-        </div>
+            {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 rounded-xl" />}
+        </section>
     )
 }
 

@@ -11,7 +11,7 @@ function Nav() {
                 <h1 className='font-Poppins font-bold text-2xl whitespace-nowrap'>Federico Cecchini</h1>
             </div>
             <section className='flex gap-6 font-Poppins font-medium text-base items-center'>
-                <Link to={"#"}>Home</Link>
+                <Link to={"/"}>Home</Link>
                 <Link to={"/about"}>Chi siamo</Link>
                 <CTA to={"/services"} text={"Servizi"} />
             </section>

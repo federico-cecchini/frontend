@@ -12,7 +12,7 @@ function Paragraph({text}) {
             const lineHeight = parseInt(window.getComputedStyle(pRef.current).lineHeight)
             const height = pRef.current.scrollHeight
             const lines = Math.ceil(height / lineHeight)
-            setShowButton(lines > 2)
+            setShowButton(lines > 3)
         }
     }, [text])
 
@@ -20,7 +20,7 @@ function Paragraph({text}) {
         <p 
             key={index}
             ref={pRef}
-            className={`font-Montserrat font-normal dark:text-white text-black !text-opacity-55 text-lg ${!isExpanded ? 'line-clamp-2' : ''}`}
+            className={`font-Montserrat font-normal dark:text-white text-black !text-opacity-55 text-lg ${!isExpanded ? 'line-clamp-3' : ''}`}
         >
             {para}
         </p>

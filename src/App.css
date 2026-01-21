@@ -1,3 +1,7 @@
 .rfm-initial-child-container, .rfm-marquee{
     gap: 2rem /* 32px */;
 }
+
+*{
+    scroll-behavior: smooth;
+}
