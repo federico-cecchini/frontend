@@ -44,7 +44,7 @@ function Statistics({ years, patients, percentage }) {
     }, [years, patients, percentage]);
 
     return (
-        <section className="flex flex-col md:h-fit md:flex-row absolute -top-9 w-[calc(100vw-10%)] rounded-xl gap-16 justify-around py-16 dark:bg-dark-secondary-bg shadow-lg">
+        <section className="flex flex-col md:h-fit md:flex-row absolute -top-9 w-[calc(100vw-10%)] rounded-xl gap-16 justify-around py-16 dark:bg-dark-secondary-bg bg-white shadow-lg font-Montserrat">
             <div className="text-center">
                 <h2 className="text-4xl font-bold dark:text-white text-dark">{countYears}{countYears === years ? "+" : ""}</h2>
                 <p className="dark:text-white text-dark !text-opacity-55">Anni di esperienza</p>

@@ -45,40 +45,42 @@ function TimeTable() {
     }, [isOpen, setIsOpen]);
 
     return (
-        <div className='dark:bg-dark-bg rounded-xl p-8 flex flex-col xl:flex-row gap-6 font-Montserrat'>
+        <div className='dark:bg-dark-bg bg-white rounded-xl p-8 flex flex-col xl:flex-row gap-6 font-Montserrat'>
             <div className="">
                 <section className='flex flex-col gap-3'>
                     <p className={`font-medium text-xl ${isOpen ? 'text-cta-bg' : 'text-closed'}`}>{isOpen ? "Aperto" : "Chiuso"}</p>
-                    <h1 className='font-bold text-2xl whitespace-nowrap text-white'>Orari di Apertura</h1>
+                    <h1 className='font-bold text-2xl whitespace-nowrap dark:text-white text-black'>Orari di Apertura</h1>
                 </section>
                 <p className='dark:text-white text-black !text-opacity-55'>
                     Ricevo su appuntamento per garantire ad ogni paziente la massima attenzione e tranquillità durante il trattamento
                 </p>
             </div>
-            <table className='w-full text-left dark:text-white text-black table-fixed bg-dark-secondary-bg rounded-xl'>
-                <tbody>
-                    {Object.entries(
-                        Object.entries(openingHours).reduce((acc, [day, hours]) => {
-                            const key = hours.start && hours.end ? `${hours.start}-${hours.end}` : 'Chiuso';
-                            if (!acc[key]) acc[key] = [];
-                            acc[key].push(day);
-                            return acc;
-                        }, {})
-                    ).map(([timeRange, days]) => (
-                        <tr key={timeRange} className={`${days[0] !== 'Sunday' ? "border-b" : ""} border-gray-700`}>
-                            <td className='py-3 px-4 opacity-55 w-1/2 truncate'>
-                                {days.length >= 2 
-                                    ? `${translation[days[0]]} - ${translation[days[days.length - 1]]}`
-                                    : translation[days[0]]
-                                }
-                            </td>
-                            <td className={`py-3 text-right px-4 font-semibold whitespace-nowrap ${timeRange === 'Chiuso' ? 'text-closed' : 'text-white'}`}>
-                                {timeRange === 'Chiuso' ? 'Chiuso' : timeRange}
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <div className="w-full overflow-hidden rounded-xl border border-black dark:border-white/20">
+                <table className='w-full table-fixed text-left dark:text-white text-black dark:bg-dark-secondary-bg bg-light-secondary-bg'>
+                    <tbody>
+                        {Object.entries(
+                            Object.entries(openingHours).reduce((acc, [day, hours]) => {
+                                const key = hours.start && hours.end ? `${hours.start}-${hours.end}` : 'Chiuso';
+                                if (!acc[key]) acc[key] = [];
+                                acc[key].push(day);
+                                return acc;
+                            }, {})
+                        ).map(([timeRange, days]) => (
+                            <tr key={timeRange} className={`${days[0] !== 'Sunday' ? "border-b" : ""} border-gray-700`}>
+                                <td className='py-3 px-4 opacity-55 dark:text-white text-black w-1/2 truncate'>
+                                    {days.length >= 2 
+                                        ? `${translation[days[0]]} - ${translation[days[days.length - 1]]}`
+                                        : translation[days[0]]
+                                    }
+                                </td>
+                                <td className={`py-3 text-right px-4 font-semibold whitespace-nowrap ${timeRange === 'Chiuso' ? 'text-closed' : 'dark:text-white text-blacl'}`}>
+                                    {timeRange === 'Chiuso' ? 'Chiuso' : timeRange}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 }

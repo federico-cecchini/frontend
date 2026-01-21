@@ -11,7 +11,8 @@ export default {
         'dark-secondary-bg': '#1A2632',
         'cta-bg': '#137FEC',
         'gradient-start-bg': '#67A7E7',
-        'closed': '#F56565'
+        'closed': '#F56565',
+        'light-secondary-bg': '#F6F7F8',
       },
       fontFamily: {
         'Poppins': ["Poppins", "sans-serif"],

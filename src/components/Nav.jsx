@@ -12,8 +12,8 @@ function Nav() {
             </div>
             <section className='flex gap-6 font-Poppins font-medium text-base items-center'>
                 <Link to={"#"}>Home</Link>
-                <Link to={"about"}>Chi siamo</Link>
-                <CTA to={"services"} text={"Servizi"} />
+                <Link to={"/about"}>Chi siamo</Link>
+                <CTA to={"/services"} text={"Servizi"} />
             </section>
         </nav>
     )

@@ -12,7 +12,7 @@ function Hero({title, subtitle, image, text}) {
             <section className='md:text-2xl'>
                 {
                     text.split('\n').map((line, index) => (
-                        <p key={index} className="font-Montserrat font-normal dark:text-white text-black !text-opacity-55">{line}</p>
+                        <p key={index} className="font-Montserrat font-normal text-white  !text-opacity-55">{line}</p>
                     ))
                 }
                 {image && <img src={image} alt="Hero Image" className="hero-image" />}
