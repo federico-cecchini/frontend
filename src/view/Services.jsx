@@ -52,7 +52,7 @@ function Services() {
                 }
             </section>
             <div className="bg-white dark:bg-dark-secondary-bg px-6 md:px-8 py-20 flex flex-col gap-12">
-                <h1 className='dark:text-white text-black font-Poppins text-4xl font-bold whitespace-nowrap'>Domande Frequenti</h1>
+                <h1 className='dark:text-white text-black font-Poppins text-4xl font-bold whitespace-nowrap text-center'>Domande Frequenti</h1>
                 {
                     FAQs.map((faq, index) => (
                         <FAQ key={index} question={faq.question} answer={faq.answer} />
