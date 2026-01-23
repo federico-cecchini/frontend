@@ -4,6 +4,7 @@ import Article from '../components/Article'
 import Service from '../components/Service'
 import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
+import ServiceHero from '../assets/services.jpg'
 import '../App.css'
 
 const services = [
@@ -42,7 +43,7 @@ function Services() {
     return (
         <>
             <Nav />
-            <Hero title="Ritrova il tuo equilibrio naturale" subtitle="" text={"Ogni corpo racconta una storia. Attraverso trattamenti manuali precisi e personalizzati, aiuto i miei pazienti a ritroare il benessere, eliminare il dolore e ristabilire l’armonia tra mente e corpo."} image={'./vite.svg'}/>
+            <Hero title="Ritrova il tuo equilibrio \nnaturale" subtitle="" text={"Ogni corpo racconta una storia. Attraverso trattamenti manuali precisi e personalizzati, aiuto i miei pazienti a ritroare il benessere, eliminare il dolore e ristabilire l’armonia tra mente e corpo."} image={ServiceHero}/>
             <Article title={"Percorsi di cura personalizzati"} text={"Il mio intervento è un trattamento osteopatico clinicamente orientato, mirato alla risoluzione di disfunzioni muscolo-scheletriche attraverso tecniche manuali specifiche e altamente specializzate.\nOgni trattamento è personalizzato sul singolo caso, con una valutazione immediata e un intervento mirato.\nL’obiettivo è fornire un beneficio concreto anche in presenza di dolore acuto o riacutizzazione di disturbi cronici."} className={"bg-light-secondary-bg "}/>
             <section className='px-6 md:px-8 dark:bg-dark-bg bg-light-secondary-bg flex flex-col gap-6 pb-20'>
                 {
