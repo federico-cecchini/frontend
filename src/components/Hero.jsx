@@ -5,7 +5,7 @@ import '../App.css'
 
 function Hero({title, subtitle, image, text}) {
     return (
-        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between' : 'justify-center'} bg-cover bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(${BackgroundHero})`}}>
+        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between gap-10' : 'justify-center'} bg-cover bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(${BackgroundHero})`}}>
             <div className='flex flex-col gap-10'>
                 <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl ${image ? 'text-left' : 'text-center'}`}>
                     {

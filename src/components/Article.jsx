@@ -9,7 +9,7 @@ function Article({title, subtitle, text, img, className}) {
                 <h2 className='text-cta-bg text-3xl'>{subtitle}</h2>
             </div>
             <Paragraph text={text}/>
-            { img && <img src={img} alt={title} className='hidden xl:block h-36'/>}
+            { img && <img src={img} alt={title} className='hidden xl:block w-1/2 rounded-xl'/>}
         </article>
     )
 }

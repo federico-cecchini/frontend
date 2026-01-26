@@ -10,11 +10,16 @@ function Place() {
                     <article className='text-xl opacity-55'>
                         <p className='font-bold'>Studio Minghetti</p>
                         <p className='font-normal'>Via Marco Minghetti, 1, 10093 Collegno TO</p>
-                        <p className='font-extralight'>Piano 3, Interno 10</p>
+                        <p className='font-extralight'>Piano 2, Interno 10</p>
                     </article>
+                    <CTA text={"Ottieni indicazioni"} to={"Maps"} className={"xl:w-fit bg-black dark:!bg-cta-bg"}/>
+                    <article className='text-xl opacity-55'>
+                        <p className='font-bold'>Farmacia Canavoso</p>
+                        <p className='font-normal'>Piazza Trento 15, 10059 Susa TO</p>
+                    </article>
+                    <CTA text={"Ottieni indicazioni"} to={"Maps"} className={"xl:w-fit bg-black dark:!bg-cta-bg"}/>
                     <p className='font-bold opacity-55'>+39 348 706 9126</p>
                 </section>
-                <CTA text={"Ottieni indicazioni"} to={"Maps"} className={"xl:w-fit bg-black dark:!bg-cta-bg"}/>
             </div>
             <div className="w-1/2">
                 <h1>Work in Progress...</h1>
