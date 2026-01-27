@@ -23,7 +23,7 @@ function Hero({title, subtitle, image, text}) {
                     }
                 </section>
                 <div className={`flex flex-col md:flex-row md:justify-center gap-3 ${image ? 'md:!justify-start' : ''}`}>
-                    <CTA to={'whatsapp'} text={"Contattami"}/>
+                    <CTA to={'https://api.whatsapp.com/send/?phone=+393389877956&text=Buongiorno%2C%20vorrei%20prenotare%20una%20seduta'} text={"Contattami"} target='_blank'/>
                     <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={"Scopri gli Orari"}/>
                 </div>
             </div>
