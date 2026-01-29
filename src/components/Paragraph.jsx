@@ -19,8 +19,8 @@ function Paragraph({text}) {
     const paragraphs = text.split('\n').map((para, index) => (
         <p 
             key={index}
-            ref={pRef}
-            className={`font-Montserrat font-normal dark:text-white text-black !text-opacity-55 text-lg ${!isExpanded ? 'line-clamp-3' : ''}`}
+            ref={index === 0 ? pRef : null}
+            className={`font-Montserrat font-normal dark:text-white text-black !text-opacity-55 text-lg ${!isExpanded && index > 0 ? 'hidden' : ''} ${!isExpanded ? 'line-clamp-3' : ''}`}
         >
             {para}
         </p>

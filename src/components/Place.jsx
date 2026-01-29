@@ -22,7 +22,7 @@ function Place() {
                 </section>
             </div>
             <div className="w-full xl:w-1/2">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xZqtN-ANQUGSkD1IXiV2z0Rz0eyXQwM&ehbc=2E312F&noprof=1" width="640" height="480" className='w-full'></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xZqtN-ANQUGSkD1IXiV2z0Rz0eyXQwM&ehbc=2E312F&noprof=1" width="640" height="480" className='w-full' loading='async'></iframe>
             </div>
         </section>
     )

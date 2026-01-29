@@ -1,7 +1,5 @@
 import { Link } from 'react-router';
 
-import facebook_dark from '../assets/facebook_dark.png'
-import facebook_light from '../assets/facebook_light.png'
 import instagram_dark from '../assets/instagram_dark.png'
 import instagram_light from '../assets/instagram_light.png'
 import '../App.css'
@@ -21,7 +19,6 @@ function Footer() {
                     </div>
                 </div>
                 <div className="flex gap-4 items-start">
-                    <a href="https://www.facebook.com/cecchiniosteopata"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? facebook_dark : facebook_light} alt="" className='w-6'/></a>
                     <a href="https://www.instagram.com/osteopata_federico_cecchini/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? instagram_dark : instagram_light} alt="" className='w-6'/></a>
                 </div>
             </section>
