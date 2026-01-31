@@ -2,6 +2,8 @@ import { Link } from 'react-router';
 
 import instagram_dark from '../assets/instagram_dark.png'
 import instagram_light from '../assets/instagram_light.png'
+import linkedin_dark from '../assets/linkedin_dark.png'
+import linkedin_light from '../assets/linkedin_light.png'
 import '../App.css'
 
 function Footer() {
@@ -20,6 +22,7 @@ function Footer() {
                 </div>
                 <div className="flex gap-4 items-start">
                     <a href="https://www.instagram.com/osteopata_federico_cecchini/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? instagram_dark : instagram_light} alt="" className='w-6'/></a>
+                    <a href="https://www.linkedin.com/in/federico-cecchini-9514602b9/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? linkedin_dark : linkedin_light} alt="" className='w-6'/></a>
                 </div>
             </section>
             <hr />

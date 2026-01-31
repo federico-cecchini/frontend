@@ -5,19 +5,39 @@ import Service from '../components/Service'
 import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 import ServiceHero from '../assets/services.jpg'
+import Generic from '../assets/generic.jpg'
+import Child from '../assets/child.jpg'
+import Pregnant from '../assets/pregnant.jpg'
+import Sport from '../assets/sport.jpg'
+
 import '../App.css'
 
 const services = [
     {
-        img: './vite.svg',
-        title: 'Osteopatia strutturale',
-        description: 'Tecniche dirette e precise per ristabilire la mobilità articolare, ridurre il dolore muscolo-scheletrico e migliorare la postura. Ideale per mal di chiena, cervicalgia e traumi sportivi'
+        img: Generic,
+        title: 'Osteopatia Generale',
+        description: 'L\'Osteopatia, recentemente individuata tra le professioni sanitarie, si avvale di un approccio esclusivamente manuale che ha come scopo il miglioramento dello stato di salute della persona. In particolare, attraverso il trattamento manipolativo osteopatico della disfunzione somatica, si occupa di ripristinare la funzionalità e lo stato di salute perduti a causa di un trauma o di una condizione patologica. L\'osteopatia inoltre ha un ruolo importante nella prevenzione e nel mantenimento della salute, e può essere integrata nei percorsi di cura e riabilitazione della medicina convenzionale.'
+    },
+    {
+        img: Child,
+        title: 'Osteopatia Pediatrica',
+        description: 'L\'Osteopatia Pediatrica è molto utile già dai primi giorni di vita per migliorare il benessere del bimbo dopo il parto. Migliora la qualità del sonno, allevia le coliche e riduce i disturbi legati al reflusso.L\'Osteopatia Pediatrica è anche rivolta ai bimbi più grandi ovviamente fino poi all\'età adulta.'
+    },
+    {
+        img: Pregnant,
+        title: 'Osteopatia in Gravidanza',
+        description: 'L\'Osteopatia durante la gravidanza aiuta la futura Mamma ad alleviare i dolori dovuti alla variazione della postura e a migliorare la reazione del fisico prima e dopo il parto.'
     },
     {
         img: './vite.svg',
-        title: 'Osteopatia viscerale',
-        description: 'Miglioramento della mobilità e funzionalità degli organi interni per alleviare disturbbi digestivi, reflusso, stipsi e tensioni legate allo stress emotivo.'
-    }
+        title: 'Osteopatia e Occlusione',
+        description: 'La relazione tra occlusione e postura è fondamentale. Il trattamento dell’osteopata insieme a quello dell’odontoiatra fa si che questi due sistemi si integrino al meglio per il benessere del paziente.'
+    },
+    {
+        img: Sport,
+        title: 'Osteopatia per lo Sport',
+        description: 'L\'Osteopatia applicata allo Sport è fondamentale per il miglioramento della prestazione sportiva e per la prevenzione degli infortuni.'
+    },
 ]
 
 const FAQs = [
