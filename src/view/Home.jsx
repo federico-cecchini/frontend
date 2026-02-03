@@ -5,8 +5,8 @@ import Article from '../components/Article'
 import TimeTable from '../components/TimeTable'
 import Testimonials from '../components/Testimonials'
 import Place from '../components/Place'
-import '../App.css'
 import Footer from '../components/Footer'
+import '../App.css'
 
 function Home() {
     return(
