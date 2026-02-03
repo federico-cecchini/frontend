@@ -8,6 +8,10 @@ function Paragraph({text}) {
     const pRef = useRef(null)
 
     useEffect(() => {
+        if (text.split('\n').length > 1){
+            setShowButton(true)
+            return
+        }
         if (pRef.current) {
             const lineHeight = parseInt(window.getComputedStyle(pRef.current).lineHeight)
             const height = pRef.current.scrollHeight
@@ -36,7 +40,7 @@ function Paragraph({text}) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="text-blue-500 text-sm mt-2"
                 >
-                    {isExpanded ? 'Comprimi' : 'Espandi'}
+                    {isExpanded ? 'Mostra meno' : 'Altro'}
                 </button>
             )}
         </div>

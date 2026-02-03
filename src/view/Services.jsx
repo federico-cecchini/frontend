@@ -8,6 +8,7 @@ import ServiceHero from '../assets/services.jpg'
 import Generic from '../assets/generic.jpg'
 import Child from '../assets/child.jpg'
 import Pregnant from '../assets/pregnant.jpg'
+import Occlusion from '../assets/occlusion.jpg'
 import Sport from '../assets/sport.jpg'
 
 import '../App.css'
@@ -29,7 +30,7 @@ const services = [
         description: 'L\'Osteopatia durante la gravidanza aiuta la futura Mamma ad alleviare i dolori dovuti alla variazione della postura e a migliorare la reazione del fisico prima e dopo il parto.'
     },
     {
-        img: './vite.svg',
+        img: Occlusion,
         title: 'Osteopatia e Occlusione',
         description: 'La relazione tra occlusione e postura è fondamentale. Il trattamento dell’osteopata insieme a quello dell’odontoiatra fa si che questi due sistemi si integrino al meglio per il benessere del paziente.'
     },
@@ -43,19 +44,11 @@ const services = [
 const FAQs = [
     {
         question: 'Quanto dura una seduta?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-        question: 'Cosa devo portare al primo appuntamento?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        answer: 'I trattamenti possono durare dai 40 fino ai 60 minuti, a seconda delle necessità.'
     },
     {
         question: 'L’osteopatia è dolorosa?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-        question: 'Come devo vestirmi?',
-        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        answer: 'Assolutamente no, ogni tecnica è eseguita in modo preciso nel rispetto del comfort e del benessere del paziente'
     }
 ]
 

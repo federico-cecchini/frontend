@@ -10,7 +10,7 @@ function Place() {
                     <article className='text-xl opacity-55'>
                         <p className='font-bold'>Studio Minghetti</p>
                         <p className='font-normal'>Via Marco Minghetti, 1, 10093 Collegno TO</p>
-                        <p className='font-extralight'>Piano 2, Interno 10</p>
+                        <p className='font-extralight'>Piano 2</p>
                     </article>
                     <CTA text={"Ottieni indicazioni"} to={"https://www.google.com/maps/dir/?api=1&destination=Dott.+Cecchini+Federico+Eugenio+Osteopata+D.O."} className={"xl:w-fit bg-black dark:!bg-cta-bg"} target='_blank'/>
                     <article className='text-xl opacity-55'>

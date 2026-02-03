@@ -9,7 +9,7 @@ import PhotoGallery from '../components/PhotoGallery'
 import AboutHero from '../assets/about.jpg'
 import Library from '../assets/library.jpg'
 import Degre from '../assets/degree.png'
-import Verify from '../assets/Verify.png'
+import Verify from '../assets/verify.png'
 import Osteopath from '../assets/orthopedics.png'
 import '../App.css'
 
