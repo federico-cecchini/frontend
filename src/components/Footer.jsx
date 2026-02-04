@@ -4,7 +4,6 @@ import instagram_dark from '../assets/instagram_dark.png'
 import instagram_light from '../assets/instagram_light.png'
 import linkedin_dark from '../assets/linkedin_dark.png'
 import linkedin_light from '../assets/linkedin_light.png'
-import Logo from '../assets/logo.svg'
 import '../App.css'
 
 function Footer() {
@@ -13,7 +12,7 @@ function Footer() {
             <section className='flex justify-between'>
                 <div className="flex flex-col md:flex-row gap-6">
                     <section className='flex items-center whitespace-nowrap'>
-                        <img src={Logo} alt="Logo" className="w-10 h-10"/>
+                        <img src='./logo.svg' alt="Logo" className="w-10 h-10"/>
                         <h1 className='font-semibold font-Poppins'>Federico Cecchini</h1>
                     </section>
                     <div className="opacity-55 md:flex md:gap-6 md:items-center">
