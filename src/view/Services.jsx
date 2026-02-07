@@ -10,6 +10,7 @@ import Child from '../assets/child.jpg'
 import Pregnant from '../assets/pregnant.jpg'
 import Occlusion from '../assets/occlusion.jpg'
 import Sport from '../assets/sport.jpg'
+import Enf from '../assets/enf.jpg'
 
 import '../App.css'
 
@@ -39,17 +40,46 @@ const services = [
         title: 'Osteopatia per lo Sport',
         description: 'L\'Osteopatia applicata allo Sport è fondamentale per il miglioramento della prestazione sportiva e per la prevenzione degli infortuni.'
     },
+    {
+        img: Enf,
+        title: 'ENF Terapia',
+        description: 'È un\'innovativa elettroterapia che penetra anche nei punti più reconditi, offrendo precisione ineguagliabile.Grazie alle frequenze generate, individua con precisione le fonti di dolore, avviando una terapia di riequilibrio corporeo. Questo processo regolare di modulazione delle onde promuove l’armonia bioelettrica delle membrane cellulari, fondamentali per i tessuti interessati.'
+    },
 ]
 
 const FAQs = [
     {
         question: 'Quanto dura una seduta?',
-        answer: 'I trattamenti possono durare dai 40 fino ai 60 minuti, a seconda delle necessità.'
+        answer: 'Ogni visita dura in media tra i 40 e i 60 minuti, ma non guardo mai l’orologio. Mi interessa capire la causa che sta generando il dolore, non solo il sintomo. Preferisco dedicare qualche minuto in più per analizzare nel dettaglio ciò che sta realmente accadendo al tuo corpo, perché la precisione, quando si parla di salute, fa la differenza.'
     },
     {
         question: 'L’osteopatia è dolorosa?',
-        answer: 'Assolutamente no, ogni tecnica è eseguita in modo preciso nel rispetto del comfort e del benessere del paziente'
-    }
+        answer: 'Assolutamente no. un trattamento ad hoc non deve far male, ma può generare sensazioni diverse: alleggerimento, calore, rilascio, decompressione, migliore libertà di movimento e assenza di dolore. L\'obiettivo non è forzare il corpo, ma accompagnarlo verso il suo equilibrio naturale. Molti pazienti alla fine si alzano dal lettino con una sensazione di leggerezza e chiarezza fisica nuova'
+    },
+    {
+        question: 'Serve portare esami?',
+        answer: 'Se hai già risonanze, lastre o referti recenti, portali: mi aiutano a contestualizzare il quadro. Non sono indispensabili, ma possono accelerare l\'analisi. Nel mio studio ogni valutazione parte sempre da una visione globale, non da un singolo esame.'
+    },
+    {
+        question: 'Mi "scrocchierà" tutto il corpo?',
+        answer: 'No. Le manipolazioni articolari (i classici "crack") non sono sempre necessarie e vengono eseguite solo se indicate per il paziente e sicure. Nel mio metodo integro approcci dolci e progressivi, orientati al risultato, non allo "scrocchio". In molti casi si lavora su muscoli, fasce e articolazioni senza alcun rumore... ma con effetti concreti.'
+    },
+    {
+        question: 'Come devo vestirmi per svolgere il trattamento?',
+        answer: 'Consiglio un abbigliamento comodo: pantalone morbido o tuta, maglia leggera, niente jeans o gonne rigide. Devi sentirti libero di muoverti e rilassarti.'
+    },
+    {
+        question: 'Come devo vestirmi per svolgere il trattamento?',
+        answer: 'Consiglio un abbigliamento comodo: pantalone morbido o tuta, maglia leggera, niente jeans o gonne rigide. Devi sentirti libero di muoverti e rilassarti.'
+    },
+    {
+        question: 'Quante sedute dovrò fare per risolvere il mio problema?',
+        answer: 'Dipende dal tipo di problema, dalla sua durata e da quanto il corpo risponde al trattamento. Nella maggior parte dei casi, già dopo la prima o seconda seduta si percepisce un netto miglioramento. Il mio approccio non si limita a spegnere il sintomo, ma a risolvere la causa e prevenire le recidive, per cui costruisco un percorso su misura per ogni persona. L’obiettivo è ottenere risultati stabili, non trattamenti infiniti.'
+    },
+    {
+        question: 'Come si svolge la prima visita?',
+        answer: 'La prima visita è un vero e proprio check-up del tuo corpo, non un semplice trattamento. Si parte da un dialogo approfondito per comprendere storia, stile di vita e abitudini posturali. Poi passo all’analisi posturale BioTonix 3D per individuare gli squilibri strutturali e funzionali. Infine, valuto manualmente ciò che il corpo comunica e intervengo con tecniche mirate per ristabilire equilibrio e funzionalità. L’obiettivo non è solo togliere il dolore, ma capire perché è comparso e impedire che torni.'
+    },
 ]
 
 function Services() {
