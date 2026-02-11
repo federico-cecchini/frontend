@@ -18,12 +18,12 @@ function Hero({title, subtitle, image, text}) {
                 <section className='md:text-2xl'>
                     {
                         text.split('\n').map((line, index) => (
-                            <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 ${image ? 'text-left' : 'text-center'}`}>{line}</p>
+                            <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 text-xl ${image ? 'text-left' : 'text-center'}`}>{line}</p>
                         ))
                     }
                 </section>
                 <div className={`flex flex-col md:flex-row md:justify-center gap-3 ${image ? 'md:!justify-start' : ''}`}>
-                    <CTA to={'whatsapp'} text={"Contattami"}/>
+                    <CTA to={'https://api.whatsapp.com/send/?phone=+393389877956&text=Buongiorno%2C%20vorrei%20prenotare%20una%20prima%20visita'} text={"Contattami"} target='_blank'/>
                     <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={"Scopri gli Orari"}/>
                 </div>
             </div>

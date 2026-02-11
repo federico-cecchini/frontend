@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
 
-import facebook_dark from '../assets/facebook_dark.png'
-import facebook_light from '../assets/facebook_light.png'
 import instagram_dark from '../assets/instagram_dark.png'
 import instagram_light from '../assets/instagram_light.png'
+import linkedin_dark from '../assets/linkedin_dark.png'
+import linkedin_light from '../assets/linkedin_light.png'
 import '../App.css'
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
             <section className='flex justify-between'>
                 <div className="flex flex-col md:flex-row gap-6">
                     <section className='flex items-center whitespace-nowrap'>
-                        <img src="./vite.svg" alt="" />
+                        <img src='./logo.svg' alt="Logo" className="w-10 h-10"/>
                         <h1 className='font-semibold font-Poppins'>Federico Cecchini</h1>
                     </section>
                     <div className="opacity-55 md:flex md:gap-6 md:items-center">
@@ -21,8 +21,8 @@ function Footer() {
                     </div>
                 </div>
                 <div className="flex gap-4 items-start">
-                    <a href="https://www.facebook.com/cecchiniosteopata"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? facebook_dark : facebook_light} alt="" className='w-6'/></a>
                     <a href="https://www.instagram.com/osteopata_federico_cecchini/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? instagram_dark : instagram_light} alt="" className='w-6'/></a>
+                    <a href="https://www.linkedin.com/in/federico-cecchini-9514602b9/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? linkedin_dark : linkedin_light} alt="" className='w-6'/></a>
                 </div>
             </section>
             <hr />

@@ -8,6 +8,10 @@ function Paragraph({text}) {
     const pRef = useRef(null)
 
     useEffect(() => {
+        if (text.split('\n').length > 1){
+            setShowButton(true)
+            return
+        }
         if (pRef.current) {
             const lineHeight = parseInt(window.getComputedStyle(pRef.current).lineHeight)
             const height = pRef.current.scrollHeight
@@ -19,8 +23,8 @@ function Paragraph({text}) {
     const paragraphs = text.split('\n').map((para, index) => (
         <p 
             key={index}
-            ref={pRef}
-            className={`font-Montserrat font-normal dark:text-white text-black !text-opacity-55 text-lg ${!isExpanded ? 'line-clamp-3' : ''}`}
+            ref={index === 0 ? pRef : null}
+            className={`font-Montserrat font-normal dark:text-white text-black !text-opacity-55 text-lg ${!isExpanded && index > 0 ? 'hidden' : ''} ${!isExpanded ? 'line-clamp-3' : ''}`}
         >
             {para}
         </p>
@@ -36,7 +40,7 @@ function Paragraph({text}) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="text-blue-500 text-sm mt-2"
                 >
-                    {isExpanded ? 'Comprimi' : 'Espandi'}
+                    {isExpanded ? 'Mostra meno' : 'Altro'}
                 </button>
             )}
         </div>
