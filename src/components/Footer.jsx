@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next'
 
 import instagram_dark from '../assets/instagram_dark.png'
 import instagram_light from '../assets/instagram_light.png'
@@ -7,6 +8,8 @@ import linkedin_light from '../assets/linkedin_light.png'
 import '../App.css'
 
 function Footer() {
+    const { t } = useTranslation()
+
     return (
         <footer className='flex flex-col gap-2 dark:bg-dark-bg dark:text-white text-black px-6 py-8 font-Montserrat'>
             <section className='flex justify-between'>
@@ -16,8 +19,8 @@ function Footer() {
                         <h1 className='font-semibold font-Poppins'>Federico Cecchini</h1>
                     </section>
                     <div className="opacity-55 md:flex md:gap-6 md:items-center">
-                        <Link to="/about">Chi siamo</Link>
-                        <Link to="/services">Servizi</Link>
+                        <Link to="/about">{t("about")}</Link>
+                        <Link to="/services">{t("service")}</Link>
                     </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -27,7 +30,7 @@ function Footer() {
             </section>
             <hr />
             <div className="opacity-55 md:flex md:justify-between">
-                <h1>Federico Cecchini. Tutti i diritti riservati</h1>
+                <h1>Federico Cecchini. {t("footer.all_rights")}</h1>
                 <section className='md:flex md:gap-3'>
                     <p>P.IVA: 12057580016</p>
                     <p>Privacy Policy</p>

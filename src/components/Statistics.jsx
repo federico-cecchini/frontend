@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next'
 
 import '../App.css';
 
@@ -6,6 +7,7 @@ function Statistics({ years, patients, percentage }) {
     const [countYears, setCountYears] = useState(0);
     const [countPatients, setCountPatients] = useState(0);
     const [countPercentage, setCountPercentage] = useState(0);
+    const { t } = useTranslation()
 
     useEffect(() => {
         const duration = 2000;
@@ -47,15 +49,15 @@ function Statistics({ years, patients, percentage }) {
         <section className="flex flex-col md:h-fit md:flex-row absolute -top-9 w-[calc(100vw-10%)] rounded-xl gap-16 justify-around py-16 dark:bg-dark-secondary-bg bg-white shadow-lg font-Montserrat">
             <div className="text-center">
                 <h2 className="text-4xl font-bold dark:text-white text-dark">{countYears}{countYears === years ? "+" : ""}</h2>
-                <p className="dark:text-white text-dark !text-opacity-55">Anni di esperienza</p>
+                <p className="dark:text-white text-dark !text-opacity-55">{t("view_home.statistics.year_of_exp")}</p>
             </div>
             <div className="text-center">
                 <h2 className="text-4xl font-bold dark:text-white text-dark">{countPatients}{countPatients === patients ? "+" : ""}</h2>
-                <p className="dark:text-white text-dark !text-opacity-55">Clienti soddisfatti</p>
+                <p className="dark:text-white text-dark !text-opacity-55">{t("view_home.statistics.customer_satisfied")}</p>
             </div>
             <div className="text-center">
                 <h2 className="text-4xl font-bold dark:text-white text-dark">{countPercentage}%</h2>
-                <p className="dark:text-white text-dark !text-opacity-55">Recensione positive</p>
+                <p className="dark:text-white text-dark !text-opacity-55">{t("view_home.statistics.positive_review")}</p>
             </div>
         </section>
     );

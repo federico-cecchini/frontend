@@ -1,0 +1,156 @@
+{
+  "about": "About us",
+  "service": "Services",
+  "footer": {
+    "all_rights": "All rights reserved"
+  },
+    "hero": {
+    "contact": "Contact me",
+    "times": "Discover the timetables"
+  },
+  "view_home": {
+    "hero": {
+      "title": "The art of knowing how",
+      "subtitle": "to listen with the hands",
+      "text": "Well-being is not a luxury. It is a choice. Health is movement. Movement is life."
+    },
+    "statistics": {
+      "year_of_exp": "Years of experience",
+      "customer_satisfied": "Satisfied clients",
+      "positive_review": "Positive reviews"
+    },
+    "article": {
+      "title": "My Philosophy:",
+      "subtitle": "Listening and Precision",
+      "text": "Osteopathy is a discipline dedicated to the structural balance of the body.\nWith a scientific and personalized approach, it works on muscles, joints, fascia, organs, and posture to improve movement, reduce tension, and promote long-lasting well-being.\nThe treatment is clinically oriented, highly specialized, and aimed at resolving musculoskeletal dysfunctions through professional manual techniques.\n\nEach session is tailored to the individual case and develops in these stages:\n\n1. Case history\nInitial consultation to understand the origin of the disorder, lifestyle, clinical history, and rule out possible medical contraindications.\n\n2. Evaluation\nObservation of posture and movements, mobility tests, and functional assessments to identify restriction areas.\n\n3. Manual analysis\nThrough palpation, the osteopath evaluates joint mobility, fascial tension, and tissue quality.\n\n4. Treatment\nPersonalized manual techniques — structural, myofascial, craniosacral, or visceral — selected according to the patient’s specific needs.\n\n5. Reassessment\nCheck of improvements and post-treatment guidance on exercises, posture, and daily management.\n\nWithin the following 24–48 hours you may feel slight fatigue or soreness: this is a normal physiological adaptation response.\nThe treatment is designed to provide rapid benefits even in cases of acute pain or flare-ups.\n\nN.B.\nThe professional always reserves the right to evaluate whether the case is suitable for osteopathic treatment or requires medical intervention."
+    },
+    "timetable": {
+      "days": {
+        "Monday": "Monday",
+        "Tuesday": "Tuesday",
+        "Wednesday": "Wednesday",
+        "Thursday": "Thursday",
+        "Friday": "Friday",
+        "Saturday": "Saturday",
+        "Sunday": "Sunday"
+      },
+      "title": "Opening Hours",
+      "desc": "I receive by appointment to ensure every patient maximum attention and peace during treatment",
+      "closed": "Closed",
+      "opened": "Open"
+    },
+    "testimonials": {
+      "title": "What they say about us"
+    },
+    "places": {
+      "title": "Where to find me",
+      "minghetti": {
+        "title": "Minghetti Clinic",
+        "address": "Via Marco Minghetti, 1, 10093 Collegno TO",
+        "floor": "Floor 2"
+      },
+      "canavoso": {
+        "title": "Canavoso Pharmacy",
+        "address": "Piazza Trento 15, 10059 Susa TO"
+      },
+      "routes": "Get directions"
+    }
+  },
+  "view_about": {
+    "bachelor": {
+      "title": "Bachelor’s Degree in Sports Science",
+      "institute": "SUISM Turin"
+    },
+    "degree": {
+      "title": "Diploma in Osteopathy (D.O.)",
+      "institute": "SIOTEMA"
+    },
+    "others": {
+      "year": "Today",
+      "title": "Continuous education",
+      "institute": "Constant training on new techniques"
+    },
+    "hero": {
+      "title": "Osteopathy:",
+      "subtitle": "science, skill, and listening",
+      "text": "An osteopathic approach that combines scientific rigor, practicality, and deep empathy for patient well-being. My goal is not only to treat the cause, but to understand the person."
+    },
+    "article": {
+      "title": "Education and Qualifications",
+      "subtitle": "",
+      "text": "My academic journey began at the Polytechnic University of Turin in 2008. After two years I discovered that what truly fascinated me was biomechanics, the “mechanics of life,” and I decided to deepen my studies in Kinesiology, the science of human movement, graduating with honors in Sports and Exercise Science from SUISM in Turin in 2013.\nDuring university I had my first contact with osteopathy thanks to a professor who was both an orthopedic specialist and osteopath, and I immediately realized that this would be my path. Six years later I obtained my Diploma in Osteopathy, continuing to refine my skills with postgraduate courses in osteopathic, physiotherapeutic, and orthopedic fields to offer safe, targeted treatments based on scientific evidence."
+    },
+    "open_gallery": "Open gallery"
+  },
+  "view_service": {
+    "service": {
+      "general": {
+        "title": "General Osteopathy",
+        "desc": "Osteopathy, recently recognized among healthcare professions, uses an exclusively manual approach aimed at improving a person's health. In particular, through osteopathic manipulative treatment of somatic dysfunction, it restores functionality and health lost due to trauma or pathological conditions. Osteopathy also plays an important role in prevention and health maintenance and can be integrated into conventional medical care and rehabilitation programs."
+      },
+      "child": {
+        "title": "Pediatric Osteopathy",
+        "desc": "Pediatric osteopathy is very helpful from the very first days of life to improve a baby’s well-being after birth. It improves sleep quality, relieves colic, and reduces reflux-related disorders. Pediatric osteopathy is also suitable for older children and continues to be beneficial into adulthood."
+      },
+      "pregnant": {
+        "title": "Osteopathy During Pregnancy",
+        "desc": "Osteopathy during pregnancy helps expectant mothers relieve pain caused by posture changes and improves the body’s response before and after childbirth."
+      },
+      "occlusion": {
+        "title": "Osteopathy and Occlusion",
+        "desc": "The relationship between occlusion and posture is fundamental. Treatment by the osteopath together with the dentist allows these two systems to integrate optimally for the patient’s well-being."
+      },
+      "sport": {
+        "title": "Sports Osteopathy",
+        "desc": "Osteopathy applied to sports is essential for improving athletic performance and preventing injuries."
+      },
+      "enf": {
+        "title": "ENF Therapy",
+        "desc": "It is an innovative electrotherapy that penetrates even the deepest points, offering unmatched precision. Thanks to generated frequencies, it precisely identifies sources of pain and initiates a body rebalancing therapy. This regular wave modulation process promotes the bioelectric harmony of cellular membranes, essential for affected tissues."
+      }
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "last": {
+        "question": "How long does a session last?",
+        "answer": "Each visit lasts on average between 40 and 60 minutes, but I never watch the clock. I care about understanding the cause generating the pain, not just the symptom. I prefer dedicating a few extra minutes to analyze in detail what is really happening in your body, because precision, when it comes to health, makes the difference."
+      },
+      "hurt": {
+        "question": "Is osteopathy painful?",
+        "answer": "Absolutely not. A tailored treatment should not hurt, but it can generate different sensations: lightness, warmth, release, decompression, improved freedom of movement, and absence of pain. The goal is not to force the body, but to guide it toward its natural balance. Many patients get up from the table with a new sense of lightness and physical clarity."
+      },
+      "exams": {
+        "question": "Should I bring medical exams?",
+        "answer": "If you already have recent MRIs, X-rays, or reports, bring them: they help me contextualize the situation. They are not essential but can speed up the analysis. In my practice every evaluation always starts from a global view, not a single test."
+      },
+      "body": {
+        "question": "Will my whole body crack?",
+        "answer": "No. Joint manipulations (the classic “cracks”) are not always necessary and are performed only if appropriate and safe for the patient. In my method I integrate gentle and progressive approaches focused on results, not on the “crack.” In many cases we work on muscles, fascia, and joints without any sound… but with concrete results."
+      },
+      "wear": {
+        "question": "How should I dress for treatment?",
+        "answer": "I recommend comfortable clothing: soft pants or tracksuit, light shirt, no jeans or stiff skirts. You should feel free to move and relax."
+      },
+      "number": {
+        "question": "How many sessions will I need to solve my problem?",
+        "answer": "It depends on the type of problem, how long it has lasted, and how the body responds to treatment. In most cases, a clear improvement is already noticeable after the first or second session. My approach is not limited to turning off the symptom but to resolving the cause and preventing relapses, so I build a tailored path for each person. The goal is stable results, not endless treatments."
+      },
+      "first": {
+        "question": "How does the first visit work?",
+        "answer": "The first visit is a real full-body check-up, not a simple treatment. It starts with an in-depth conversation to understand history, lifestyle, and postural habits. Then I move to BioTonix 3D postural analysis to identify structural and functional imbalances. Finally, I manually evaluate what the body communicates and intervene with targeted techniques to restore balance and functionality. The goal is not only to remove pain, but to understand why it appeared and prevent it from returning."
+      }
+    },
+    "hero": {
+      "title": "Restore your natural",
+      "subtitle": "balance",
+      "text": "Every body tells a story. Through precise and personalized manual treatments, I help my patients regain well-being, eliminate pain, and restore harmony between mind and body."
+    },
+    "article": {
+      "title": "Personalized treatment paths",
+      "subtitle": "",
+      "text": "My intervention is a clinically oriented osteopathic treatment aimed at resolving musculoskeletal dysfunctions through specific and highly specialized manual techniques.\nEach treatment is personalized to the individual case, with immediate evaluation and targeted intervention.\nThe goal is to provide concrete benefit even in the presence of acute pain or flare-ups of chronic disorders."
+    }
+  },
+  "show_less": "Show less",
+  "show_more": "More"
+}

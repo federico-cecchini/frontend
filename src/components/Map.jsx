@@ -2,14 +2,17 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 import L from "leaflet";
+import { useTranslation } from 'react-i18next'
 
 import '../App.css'
 
 function MapContent() {
     const map = useMap();
+    const { t } = useTranslation()
+
     const markers =[
-        {position: [45.07292308205829, 7.572681564257071], popup: "Studio Minghetti<br/>Via Marco Minghetti, 1, 10093 Collegno TO<br/>Piano 2"},
-        {position: [45.13606767600684, 7.047339681873459], popup: "Farmacia Canavoso<br/>Piazza Trento 15, 10059 Susa TO"},
+        {position: [45.07292308205829, 7.572681564257071], popup: `${t("view_home.places.minghetti.title")}<br/>${t("view_home.places.minghetti.address")}<br/>${t("view_home.places.minghetti.floor")}`},
+        {position: [45.13606767600684, 7.047339681873459], popup: `${t("view_home.places.canavoso.title")}<br/>${t("view_home.places.canavoso.address")}`},
     ]
 
     useEffect(() => {
