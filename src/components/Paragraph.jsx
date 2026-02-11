@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import '../App.css'
 
@@ -6,6 +7,8 @@ function Paragraph({text}) {
     const [isExpanded, setIsExpanded] = useState(false)
     const [showButton, setShowButton] = useState(false)
     const pRef = useRef(null)
+
+    const { t } = useTranslation()
 
     useEffect(() => {
         if (text.split('\n').length > 1){
@@ -40,7 +43,7 @@ function Paragraph({text}) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     className="text-blue-500 text-sm mt-2"
                 >
-                    {isExpanded ? 'Mostra meno' : 'Altro'}
+                    {isExpanded ? t("show_less") : t("show_more")}
                 </button>
             )}
         </div>

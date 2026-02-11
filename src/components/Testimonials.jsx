@@ -1,12 +1,15 @@
 import Marquee from 'react-fast-marquee'
+import { useTranslation } from 'react-i18next'
 
 import Card from './Card'
 import '../App.css'
 
 function Testimonials() {
+    const { t } = useTranslation()
+
     return(
         <div className='flex flex-col gap-12 py-12 px-6 dark:bg-dark-bg'>
-            <h1 className='dark:text-white text-black text-center text-3xl font-bold font-Poppins underline underline-offset-4 decoration-cta-bg decoration-[5px]'>Cosa dicono di Noi</h1>
+            <h1 className='dark:text-white text-black text-center text-3xl font-bold font-Poppins underline underline-offset-4 decoration-cta-bg decoration-[5px]'>{t("view_home.testimonials.title")}</h1>
             <Marquee pauseOnHover={true} gradient={false} speed={25} autoFill={true} className='gap-8 p-5'>
                 <Card text={"Un approccio umano che mette subito a proprio agio. Lo studio è accogliente e pulito. Consigliatissimo!"} author={"Marco R."} role={"Paziente verificato"} image={"./vite.svg"} />
                 <Card text={"Mi ha aiutato a recuperare dopo un infortunio sportivo. Molto preparato e sempre disponibile."} author={"Giulia M."} role={"Paziente verificato"} image={"./vite.svg"} />

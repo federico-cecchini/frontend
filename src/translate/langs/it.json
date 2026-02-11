@@ -1,0 +1,156 @@
+{
+  "about": "Chi siamo",
+  "service": "Servizi",
+  "footer": {
+    "all_rights": "Tutti i diritti riservati"
+  },
+  "hero": {
+    "contact": "Contattami",
+    "times": "Scopri gli Orari"
+  },
+  "view_home": {
+    "hero": {
+      "title": "L'arte di saper",
+      "subtitle": "ascoltare con le mani",
+      "text": "Il benessere non è un lusso. È una scelta. La salute è movimento. Il movimento è vita."
+    },
+    "statistics": {
+      "year_of_exp": "Anni di esperienza",
+      "customer_satisfied": "Clienti soddisfatti",
+      "positive_review": "Recensione positive"
+    },
+    "article": {
+      "title": "La Mia Filosofia:",
+      "subtitle": "Ascolto e Precisione",
+      "text": "L’Osteopatia è una disciplina dedicata all’equilibrio strutturale del corpo.\nCon un approccio scientifico e personalizzato, interviene su muscoli, articolazioni, fasce, visceri e postura per migliorare il movimento, ridurre tensioni e favorire un benessere duraturo.\nIl trattamento è clinicamente orientato, altamente specializzato e mirato alla risoluzione di disfunzioni muscolo-scheletriche attraverso tecniche manuali professionali.\n\nOgni seduta è costruita sul singolo caso e si sviluppa in queste fasi:\n\n1. Anamnesi\nColloquio iniziale per comprendere origine del disturbo, stile di vita, storia clinica ed escludere eventuali controindicazioni mediche.\n\n2. Valutazione\nOsservazione della postura e dei movimenti, test di mobilità e verifiche funzionali per individuare le aree di restrizione.\n\n3. Analisi manuale\nAttraverso la palpazione l’osteopata valuta mobilità articolare, tensioni fasciali e qualità dei tessuti.\n\n4. Trattamento\nTecniche manuali personalizzate — strutturali, miofasciali, cranio-sacrali o viscerali — selezionate in base alle esigenze specifiche della persona.\n\n5. Rivalutazione\nControllo dei miglioramenti e indicazioni post-trattamento su esercizi, posture e gestione quotidiana.\n\nNelle 24-48 ore successive è possibile avvertire lieve affaticamento o indolenzimento: è una normale risposta fisiologica di adattamento.\nIl trattamento è progettato per offrire benefici rapidi anche in caso di dolore acuto o riacutizzazioni.\n\nN.B.\nIl professionista si riserva sempre di valutare se il caso sia idoneo al trattamento osteopatico o richieda intervento medico."
+    },
+    "timetable": {
+      "days": {
+        "Monday": "Lunedì",
+        "Tuesday": "Martedì",
+        "Wednesday": "Mercoledì",
+        "Thursday": "Giovedì",
+        "Friday": "Venerdì",
+        "Saturday": "Sabato",
+        "Sunday": "Domenica"
+      },
+      "title": "Orari di Apertura",
+      "desc": "Ricevo su appuntamento per garantire ad ogni paziente la massima attenzione e tranquillità durante il trattamento",
+      "closed": "Chiuso",
+      "opened": "Aperto"
+    },
+    "testimonials": {
+      "title": "Cosa dicono di Noi"
+    },
+    "places": {
+      "title": "Dove mi trovi",
+      "minghetti": {
+        "title": "Studio Minghetti",
+        "address": "Via Marco Minghetti, 1, 10093 Collegno TO",
+        "floor": "Piano 2"
+      },
+      "canavoso": {
+        "title": "Farmacia Canavoso",
+        "address": "Piazza Trento 15, 10059 Susa TO"
+      },
+      "routes": "Ottieni indicazioni"
+    }
+  },
+  "view_about": {
+    "bachelor": {
+      "title": "Laurea in Scienze Motorie Sportive",
+      "institute": "SUISM di Torino"
+    },
+    "degree": {
+      "title": "Diploma in Osteopatia (D.O.)",
+      "institute": "SIOTEMA"
+    },
+    "others": {
+      "year": "Oggi",
+      "title": "Formazione continua",
+      "institute": "Aggiornamento costante su nuove tecniche"
+    },
+    "hero": {
+      "title": "Osteopatia:",
+      "subtitle": "scienza, manualità e ascolto",
+      "text": "Un approccio osteopatico che unisce rigore scientifico, praticità ed empatia profonda per il benessere del paziente. Il mio obiettivo non è solo curare la causa. ma comprendere la persona."
+    },
+    "article": {
+      "title": "Formazione e Titoli",
+      "subtitle": "",
+      "text": "Il mio percorso di studi è iniziato al Politecnico di Torino nel 2008. Dopo due anni ho scoperto che ciò che mi affascinava davvero era la biomeccanica, la “meccanica della vita”, e ho deciso di approfondire la Chinesiologia, la scienza del movimento umano, laureandomi con lode in Scienze Motorie e Sportive presso la SUISM di Torino nel 2013.\nDurante l’università ho avuto il primo approccio all’osteopatia, grazie a un professore ortopedico e osteopata, e ho capito subito che quella sarebbe stata la mia strada. Sei anni più tardi ho conseguito il diploma in Osteopatia, continuando a perfezionarmi con corsi post-graduate in ambito osteopatico, fisioterapico e ortopedico, per offrire trattamenti sicuri, mirati e basati sulle evidenze scientifiche."
+    },
+    "open_gallery": "Apri galleria"
+  },
+  "view_service": {
+    "service": {
+      "general": {
+        "title": "Osteopatia Generale",
+        "desc": "L'Osteopatia, recentemente individuata tra le professioni sanitarie, si avvale di un approccio esclusivamente manuale che ha come scopo il miglioramento dello stato di salute della persona. In particolare, attraverso il trattamento manipolativo osteopatico della disfunzione somatica, si occupa di ripristinare la funzionalità e lo stato di salute perduti a causa di un trauma o di una condizione patologica. L'osteopatia inoltre ha un ruolo importante nella prevenzione e nel mantenimento della salute, e può essere integrata nei percorsi di cura e riabilitazione della medicina convenzionale."
+      },
+      "child": {
+        "title": "Osteopatia Pediatrica",
+        "desc": "L'Osteopatia Pediatrica è molto utile già dai primi giorni di vita per migliorare il benessere del bimbo dopo il parto. Migliora la qualità del sonno, allevia le coliche e riduce i disturbi legati al reflusso.L'Osteopatia Pediatrica è anche rivolta ai bimbi più grandi ovviamente fino poi all'età adulta."
+      },
+      "pregnant": {
+        "title": "Osteopatia in Gravidanza",
+        "desc": "L'Osteopatia durante la gravidanza aiuta la futura Mamma ad alleviare i dolori dovuti alla variazione della postura e a migliorare la reazione del fisico prima e dopo il parto."
+      },
+      "occlusion": {
+        "title": "Osteopatia e Occlusione",
+        "desc": "La relazione tra occlusione e postura è fondamentale. Il trattamento dell’osteopata insieme a quello dell’odontoiatra fa si che questi due sistemi si integrino al meglio per il benessere del paziente."
+      },
+      "sport": {
+        "title": "Osteopatia per lo Sport",
+        "desc": "L'Osteopatia applicata allo Sport è fondamentale per il miglioramento della prestazione sportiva e per la prevenzione degli infortuni."
+      },
+      "enf": {
+        "title": "Terapia ENF",
+        "desc": "È un'innovativa elettroterapia che penetra anche nei punti più reconditi, offrendo precisione ineguagliabile.Grazie alle frequenze generate, individua con precisione le fonti di dolore, avviando una terapia di riequilibrio corporeo. Questo processo regolare di modulazione delle onde promuove l’armonia bioelettrica delle membrane cellulari, fondamentali per i tessuti interessati."
+      }
+    },
+    "faqs": {
+      "title": "Domande Frequenti",
+      "last": {
+        "question": "Quanto dura una seduta?",
+        "answer": "Ogni visita dura in media tra i 40 e i 60 minuti, ma non guardo mai l’orologio. Mi interessa capire la causa che sta generando il dolore, non solo il sintomo. Preferisco dedicare qualche minuto in più per analizzare nel dettaglio ciò che sta realmente accadendo al tuo corpo, perché la precisione, quando si parla di salute, fa la differenza."
+      },
+      "hurt": {
+        "question": "L'osteopatia è dolorosa?",
+        "answer": "Assolutamente no. un trattamento ad hoc non deve far male, ma può generare sensazioni diverse: alleggerimento, calore, rilascio, decompressione, migliore libertà di movimento e assenza di dolore. L'obiettivo non è forzare il corpo, ma accompagnarlo verso il suo equilibrio naturale. Molti pazienti alla fine si alzano dal lettino con una sensazione di leggerezza e chiarezza fisica nuova"
+      },
+      "exams": {
+        "question": "Serve portare esami?",
+        "answer": "Se hai già risonanze, lastre o referti recenti, portali: mi aiutano a contestualizzare il quadro. Non sono indispensabili, ma possono accelerare l'analisi. Nel mio studio ogni valutazione parte sempre da una visione globale, non da un singolo esame."
+      },
+      "body": {
+        "question": "Mi \"scrocchierà\" tutto il corpo?",
+        "answer": "No. Le manipolazioni articolari (i classici \"crack\") non sono sempre necessarie e vengono eseguite solo se indicate per il paziente e sicure. Nel mio metodo integro approcci dolci e progressivi, orientati al risultato, non allo \"scrocchio\". In molti casi si lavora su muscoli, fasce e articolazioni senza alcun rumore... ma con effetti concreti."
+      },
+      "wear": {
+        "question": "Come devo vestirmi per svolgere il trattamento?",
+        "answer": "Consiglio un abbigliamento comodo: pantalone morbido o tuta, maglia leggera, niente jeans o gonne rigide. Devi sentirti libero di muoverti e rilassarti."
+      },
+      "number": {
+        "question": "Quante sedute dovrò fare per risolvere il mio problema?",
+        "answer": "Dipende dal tipo di problema, dalla sua durata e da quanto il corpo risponde al trattamento. Nella maggior parte dei casi, già dopo la prima o seconda seduta si percepisce un netto miglioramento. Il mio approccio non si limita a spegnere il sintomo, ma a risolvere la causa e prevenire le recidive, per cui costruisco un percorso su misura per ogni persona. L’obiettivo è ottenere risultati stabili, non trattamenti infiniti."
+      },
+      "first": {
+        "question": "Come si svolge la prima visita?",
+        "answer": "La prima visita è un vero e proprio check-up del tuo corpo, non un semplice trattamento. Si parte da un dialogo approfondito per comprendere storia, stile di vita e abitudini posturali. Poi passo all’analisi posturale BioTonix 3D per individuare gli squilibri strutturali e funzionali. Infine, valuto manualmente ciò che il corpo comunica e intervengo con tecniche mirate per ristabilire equilibrio e funzionalità. L’obiettivo non è solo togliere il dolore, ma capire perché è comparso e impedire che torni."
+      }
+    },
+    "hero": {
+      "title": "Ritrova il tuo equilibrio",
+      "subtitle": "naturale",
+      "text": "Ogni corpo racconta una storia. Attraverso trattamenti manuali precisi e personalizzati, aiuto i miei pazienti a ritrovare il benessere, eliminare il dolore e ristabilire l’armonia tra mente e corpo."
+    },
+    "article": {
+      "title": "Percorsi di cura personalizzati",
+      "subtitle": "",
+      "text": "Il mio intervento è un trattamento osteopatico clinicamente orientato, mirato alla risoluzione di disfunzioni muscolo-scheletriche attraverso tecniche manuali specifiche e altamente specializzate.\nOgni trattamento è personalizzato sul singolo caso, con una valutazione immediata e un intervento mirato.\nL’obiettivo è fornire un beneficio concreto anche in presenza di dolore acuto o riacutizzazione di disturbi cronici."
+    }
+  },
+  "show_less": "Mostra meno",
+  "show_more": "Altro"
+}

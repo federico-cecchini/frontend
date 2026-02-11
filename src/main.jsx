@@ -1,5 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+
+import './translate/I18n.jsx'
 import './index.css'
 import App from './App.jsx'
 
