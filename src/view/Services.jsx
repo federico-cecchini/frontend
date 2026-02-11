@@ -86,7 +86,7 @@ function Services() {
     return (
         <>
             <Nav />
-            <Hero title="Ritrova il tuo equilibrio \nnaturale" subtitle="" text={"Ogni corpo racconta una storia. Attraverso trattamenti manuali precisi e personalizzati, aiuto i miei pazienti a ritroare il benessere, eliminare il dolore e ristabilire l’armonia tra mente e corpo."} image={ServiceHero}/>
+            <Hero title="Ritrova il tuo equilibrio" subtitle="naturale" text={"Ogni corpo racconta una storia. Attraverso trattamenti manuali precisi e personalizzati, aiuto i miei pazienti a ritrovare il benessere, eliminare il dolore e ristabilire l’armonia tra mente e corpo."} image={ServiceHero}/>
             <Article title={"Percorsi di cura personalizzati"} text={"Il mio intervento è un trattamento osteopatico clinicamente orientato, mirato alla risoluzione di disfunzioni muscolo-scheletriche attraverso tecniche manuali specifiche e altamente specializzate.\nOgni trattamento è personalizzato sul singolo caso, con una valutazione immediata e un intervento mirato.\nL’obiettivo è fornire un beneficio concreto anche in presenza di dolore acuto o riacutizzazione di disturbi cronici."} className={"bg-light-secondary-bg "}/>
             <section className='px-6 md:px-8 dark:bg-dark-bg bg-light-secondary-bg flex flex-col gap-6 pb-20'>
                 {

@@ -18,7 +18,7 @@ function Hero({title, subtitle, image, text}) {
                 <section className='md:text-2xl'>
                     {
                         text.split('\n').map((line, index) => (
-                            <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 ${image ? 'text-left' : 'text-center'}`}>{line}</p>
+                            <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 text-xl ${image ? 'text-left' : 'text-center'}`}>{line}</p>
                         ))
                     }
                 </section>
