@@ -49,7 +49,7 @@ function About() {
             <section className='dark:!bg-dark-secondary-bg bg-light-secondary-bg flex flex-col xl:flex-row xl:py-28'>
                 <Article title={t("view_about.article.title")} text={t("view_about.article.text")} img={Library} className={"dark:!bg-dark-secondary-bg xl:w-2/3"}/>
                 <div className="flex flex-col gap-6 px-6 pb-24 xl:w-1/3 xl:py-20">
-                <p className='px-6 pb-24 xl:py-20 whitespace-nowrap text-cta-bg cursor-pointer' onClick={() => setIsOpen(!isOpen)}>{t("view_about.open_gallery")}</p>
+                <p className='xl:py-10 whitespace-nowrap text-cta-bg cursor-pointer' onClick={() => setIsOpen(!isOpen)}>{t("view_about.open_gallery")}</p>
                     {
                         degrees.map((degree, index) => (
                             <Degree 

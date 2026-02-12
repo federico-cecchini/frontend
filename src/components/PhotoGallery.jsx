@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import '../App.css'
 
 function PhotoGallery({ isOpen, setIsClose }) {
@@ -35,7 +36,7 @@ function PhotoGallery({ isOpen, setIsClose }) {
           <img
             src={files[currentIndex]}
             alt="certificate"
-            className="max-w-2xl max-h-screen"
+            className="max-w-[80vw] max-h-screen"
           />
         )}
       </div>
