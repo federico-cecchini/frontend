@@ -18,7 +18,7 @@ function Footer() {
                         <img src='./logo.svg' alt="Logo" className="w-10 h-10"/>
                         <h1 className='font-semibold font-Poppins'>Federico Cecchini</h1>
                     </section>
-                    <div className="opacity-55 md:flex md:gap-6 md:items-center">
+                    <div className="opacity-55 flex gap-6 items-center">
                         <Link to="/about">{t("about")}</Link>
                         <Link to="/services">{t("service")}</Link>
                     </div>
