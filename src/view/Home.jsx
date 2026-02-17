@@ -24,7 +24,7 @@ function Home() {
             <section className='dark:bg-dark-secondary-bg bg-light-secondary-bg py-20 px-6 md:px-8 md:py-24 xl:px-16 xl:py-32'id='timeTable'>
                 <TimeTable />
             </section>
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Place />
             <Footer />
         </>
