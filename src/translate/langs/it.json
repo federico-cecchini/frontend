@@ -1,5 +1,5 @@
 {
-  "about": "Chi siamo",
+  "about": "Chi sono",
   "service": "Servizi",
   "footer": {
     "all_rights": "Tutti i diritti riservati"
@@ -10,13 +10,13 @@
   },
   "view_home": {
     "hero": {
-      "title": "L'arte di saper",
-      "subtitle": "ascoltare con le mani",
+      "title": "Osteopatia",
+      "subtitle": "L'arte di saper ascoltare con le mani",
       "text": "Il benessere non è un lusso. È una scelta. La salute è movimento. Il movimento è vita."
     },
     "statistics": {
       "year_of_exp": "Anni di esperienza",
-      "customer_satisfied": "Clienti soddisfatti",
+      "customer_satisfied": "Pazienti soddisfatti",
       "positive_review": "Recensione positive"
     },
     "article": {
@@ -35,7 +35,7 @@
         "Sunday": "Domenica"
       },
       "title": "Orari di Apertura",
-      "desc": "Ricevo su appuntamento per garantire ad ogni paziente la massima attenzione e tranquillità durante il trattamento",
+      "desc": "Ricevo solo su appuntamento Whatsapp. Il professionista si riserva in ogni momento di valutare se il caso sia adeguato al trattamento osteopatico o necessiti, per la tutela del Paziente , di un intervento medico-ospedaliero. Domenica solo urgenze",
       "closed": "Chiuso",
       "opened": "Aperto"
     },

@@ -16,7 +16,7 @@ function Footer() {
                 <div className="flex flex-col md:flex-row gap-6">
                     <section className='flex items-center whitespace-nowrap'>
                         <img src='./logo.svg' alt="Logo" className="w-10 h-10"/>
-                        <h1 className='font-semibold font-Poppins'>Federico Cecchini</h1>
+                        <h1 className='font-semibold font-Poppins'>Dott. Federico Cecchini Osteopata D.O.</h1>
                     </section>
                     <div className="opacity-55 flex gap-6 items-center">
                         <Link to="/about">{t("about")}</Link>

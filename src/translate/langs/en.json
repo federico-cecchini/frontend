@@ -1,5 +1,5 @@
 {
-  "about": "About us",
+  "about": "About me",
   "service": "Services",
   "footer": {
     "all_rights": "All rights reserved"
@@ -10,13 +10,13 @@
   },
   "view_home": {
     "hero": {
-      "title": "The art of knowing how",
-      "subtitle": "to listen with the hands",
+      "title": "Osteopathy",
+      "subtitle": "The art of knowing how to listen with the hands",
       "text": "Well-being is not a luxury. It is a choice. Health is movement. Movement is life."
     },
     "statistics": {
       "year_of_exp": "Years of experience",
-      "customer_satisfied": "Satisfied clients",
+      "customer_satisfied": "Satisfied patients",
       "positive_review": "Positive reviews"
     },
     "article": {
@@ -35,7 +35,7 @@
         "Sunday": "Sunday"
       },
       "title": "Opening Hours",
-      "desc": "I receive by appointment to ensure every patient maximum attention and peace during treatment",
+      "desc": "I only accept appointments via WhatsApp. The professional reserves the right at all times to assess whether the case is suitable for osteopathic treatment or requires medical or hospital intervention for the protection of the patient. Sundays: emergencies only",
       "closed": "Closed",
       "opened": "Open"
     },
