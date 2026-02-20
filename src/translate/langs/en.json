@@ -17,7 +17,10 @@
     "statistics": {
       "year_of_exp": "Years of experience",
       "customer_satisfied": "Satisfied patients",
-      "positive_review": "Positive reviews"
+      "positive_review": "Positive reviews",
+      "hours_of_training": "Hours of training",
+      "office": "Offices",
+      "suggested": "Patients who recommended me"
     },
     "article": {
       "title": "My Philosophy:",
