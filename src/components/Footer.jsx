@@ -14,9 +14,9 @@ function Footer() {
         <footer className='flex flex-col gap-2 dark:bg-dark-bg dark:text-white text-black px-6 py-8 font-Montserrat'>
             <section className='flex justify-between'>
                 <div className="flex flex-col md:flex-row gap-6">
-                    <section className='flex items-center whitespace-nowrap'>
+                    <section className='flex items-center'>
                         <img src='./logo.svg' alt="Logo" className="w-10 h-10"/>
-                        <h1 className='font-semibold font-Poppins'>Federico Cecchini</h1>
+                        <h1 className='font-semibold font-Poppins'>Dott. Federico Cecchini Osteopata D.O.</h1>
                     </section>
                     <div className="opacity-55 flex gap-6 items-center">
                         <Link to="/about">{t("about")}</Link>
