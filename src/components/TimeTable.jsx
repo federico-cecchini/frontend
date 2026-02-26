@@ -69,7 +69,7 @@ function TimeTable() {
                                         : translation[days[0]]
                                     }
                                 </td>
-                                <td className={`py-3 text-right px-4 font-semibold whitespace-nowrap ${timeRange === t("view_home.timetable.closed") ? 'text-closed' : 'dark:text-white text-blacl'}`}>
+                                <td className={`py-3 text-right px-4 font-semibold whitespace-nowrap truncate ${timeRange === t("view_home.timetable.closed") ? 'text-closed' : 'dark:text-white text-black'}`}>
                                     {timeRange === t("view_home.timetable.closed") ? t("view_home.timetable.closed") : timeRange}
                                 </td>
                             </tr>

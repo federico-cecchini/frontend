@@ -17,7 +17,7 @@ function Home() {
         <>
             <Nav />
             <Hero title={t("view_home.hero.title")} subtitle={t("view_home.hero.subtitle")} text={t("view_home.hero.text")}/>
-            <section className='relative flex justify-center dark:bg-dark-bg h-[50vh] md:h-[15vh]'>
+            <section className='relative flex justify-center dark:bg-dark-bg h-[110vh] md:h-[15vh]'>
                 <Statistics years={9} patients={10000} percentage={100} hours={1200} office={2} suggested={95}/>
             </section>
             <Article title={t("view_home.article.title")} subtitle={t("view_home.article.subtitle")} text={t("view_home.article.text")}/>
