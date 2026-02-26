@@ -14,8 +14,8 @@ function Nav() {
                 <h1 className='font-Poppins font-bold text-2xl'>Dott. Federico Cecchini Osteopata D.O.</h1>
             </Link>
             <section className='flex gap-6 font-Poppins font-medium text-base items-center'>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/about"}>{t("about")}</Link>
+                <Link to={"/"} className='whitespace-nowrap'>Home</Link>
+                <Link to={"/about"} className='whitespace-nowrap'>{t("about")}</Link>
                 <CTA to={"/services"} text={t("service")} />
             </section>
         </nav>
