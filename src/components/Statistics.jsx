@@ -78,7 +78,7 @@ function Statistics({ years, patients, percentage, hours, office, suggested }) {
     }, [years, patients, percentage]);
 
     return (
-        <section className="flex flex-col md:h-[35vh] md:flex-row absolute -top-9 w-[calc(100vw-10%)] rounded-xl gap-16 justify-around py-16 dark:bg-dark-secondary-bg bg-light-secondary-bg shadow-lg font-Montserrat h-[calc(100vh+25vh)]">
+        <section className="flex flex-col md:h-fit md:flex-row absolute -top-9 w-[calc(100vw-10%)] rounded-xl gap-16 justify-around py-16 dark:bg-dark-secondary-bg bg-light-secondary-bg shadow-lg font-Montserrat h-[calc(100vh+25vh)]">
             <div className="text-center">
                 <h2 className="text-4xl font-bold dark:text-white text-dark">{countYears}{countYears === years ? "+" : ""}</h2>
                 <p className="dark:text-white text-dark !text-opacity-55">{t("view_home.statistics.year_of_exp")}</p>
