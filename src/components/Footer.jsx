@@ -38,7 +38,7 @@ function Footer() {
                 <h1>Federico Cecchini. {t("footer.all_rights")}</h1>
                 <section className='md:flex md:gap-3'>
                     <p>P.IVA: 12057580016</p>
-                    <p>Privacy Policy</p>
+                    <Link to={"https://www.iubenda.com/privacy-policy/85031061/legal"}>Privacy Policy</Link>
                 </section>
             </div>
         </footer>
