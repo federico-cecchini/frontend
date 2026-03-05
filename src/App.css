@@ -3,7 +3,7 @@
 }
 
 .iub__us-widget{
-    display: none;
+    display: none !important;
 }
 
 *{
