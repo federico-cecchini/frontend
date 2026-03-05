@@ -16,7 +16,7 @@ function Nav() {
             <section className='flex gap-6 font-Poppins font-medium text-base items-center'>
                 <Link to={"/"} className='whitespace-nowrap'>Home</Link>
                 <Link to={"/about"} className='whitespace-nowrap'>{t("about")}</Link>
-                <CTA to={"/services"} text={t("service")} />
+                <CTA to={"/services"} text={t("service")}/>
             </section>
         </nav>
     )

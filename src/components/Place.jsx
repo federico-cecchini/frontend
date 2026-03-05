@@ -17,12 +17,12 @@ function Place() {
                         <p className='font-normal'>{t("view_home.places.minghetti.address")}</p>
                         <p className='font-extralight'>{t("view_home.places.minghetti.floor")}</p>
                     </article>
-                    <CTA text={t("view_home.places.routes")} to={"https://www.google.com/maps/dir/?api=1&destination=Dott.+Cecchini+Federico+Eugenio+Osteopata+D.O."} className={"xl:w-fit bg-black dark:!bg-cta-bg"} target='_blank'/>
+                    <CTA text={t("view_home.places.routes")} to={"https://www.google.com/maps/dir/?api=1&destination=Dott.+Cecchini+Federico+Eugenio+Osteopata+D.O."} className={"xl:w-fit bg-black dark:!bg-cta-bg"} target='_blank' category={"Indicazioni Minghetti"}/>
                     <article className='text-xl opacity-55'>
                         <p className='font-bold'>{t("view_home.places.canavoso.title")}</p>
                         <p className='font-normal'>{t("view_home.places.canavoso.address")}</p>
                     </article>
-                    <CTA text={t("view_home.places.routes")} to={"https://www.google.com/maps/dir/?api=1&destination=Farmacia+Canavoso+Dr.Marco"} className={"xl:w-fit bg-black dark:!bg-cta-bg"} target='_blank'/>
+                    <CTA text={t("view_home.places.routes")} to={"https://www.google.com/maps/dir/?api=1&destination=Farmacia+Canavoso+Dr.Marco"} className={"xl:w-fit bg-black dark:!bg-cta-bg"} target='_blank' category={"Indicazioni Canavoso"}/>
                     <p className='font-bold opacity-55'>+39 348 706 9126</p>
                 </section>
             </div>
