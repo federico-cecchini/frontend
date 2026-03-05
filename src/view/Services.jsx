@@ -88,7 +88,7 @@ function Services() {
         <>
             <Nav />
             <Hero title={t("view_service.hero.title")} subtitle={t("view_service.hero.subtitle")} text={t("view_service.hero.text")} image={ServiceHero}/>
-            <Article title={t("view_service.article.title")} text={t("view_service.article.text")} className={"bg-light-secondary-bg "}/>
+            <Article title={t("view_service.article.title")} text={t("view_service.article.text")} className={"bg-light-secondary-bg "} category={"Interaction Services Paragraph"}/>
             <section className='px-6 md:px-8 dark:bg-dark-bg bg-light-secondary-bg flex flex-col gap-6 pb-20'>
                 {
                     services.map((service, index) => (

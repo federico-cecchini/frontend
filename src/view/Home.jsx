@@ -20,7 +20,7 @@ function Home() {
             <section className='relative flex justify-center dark:bg-dark-bg h-[110vh] md:h-[15vh]'>
                 <Statistics years={9} patients={10000} percentage={100} hours={1200} office={2} suggested={95}/>
             </section>
-            <Article title={t("view_home.article.title")} subtitle={t("view_home.article.subtitle")} text={t("view_home.article.text")}/>
+            <Article title={t("view_home.article.title")} subtitle={t("view_home.article.subtitle")} text={t("view_home.article.text")} category={"Interaction Home Paragraph"}/>
             <section className='dark:bg-dark-secondary-bg bg-light-secondary-bg py-20 px-6 md:px-8 md:py-24 xl:px-16 xl:py-32'id='timeTable'>
                 <TimeTable />
             </section>
