@@ -8,9 +8,9 @@ function Hero({title, subtitle, image, text}) {
     const { t } = useTranslation()
 
     return (
-        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between gap-10' : 'justify-center'} bg- bg-center bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url('./logo.svg') `}}>
+        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between gap-10' : 'justify-center'} bg-[60%] bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('./logo.svg') `}}>
             <div className='flex flex-col gap-10'>
-                <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl ${image ? 'text-left' : 'text-center'}`}>
+                <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl flex flex-col gap-2 ${image ? 'text-left' : 'text-center'}`}>
                     {
                         title.split('\\n').map((line, index) => (
                             <h1 key={index}>{line}</h1>
@@ -18,7 +18,7 @@ function Hero({title, subtitle, image, text}) {
                     }
                     <h1 className="bg-gradient-to-r from-gradient-start-bg to-white bg-clip-text text-transparent">{subtitle}</h1>
                 </div>
-                <section className='md:text-2xl'>
+                <section className='md:text-3xl'>
                     {
                         text.split('\n').map((line, index) => (
                             <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 text-xl ${image ? 'text-left' : 'text-center'}`}>{line}</p>
