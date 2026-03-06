@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next'
+import ReactGA from 'react-ga4'
 
 import instagram_dark from '../assets/instagram_dark.png'
 import instagram_light from '../assets/instagram_light.png'
@@ -24,8 +25,12 @@ function Footer() {
                     </div>
                 </div>
                 <div className="flex gap-4 items-start">
-                    <a href="https://www.instagram.com/osteopata_federico_cecchini/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? instagram_dark : instagram_light} alt="" className='w-6'/></a>
-                    <a href="https://www.linkedin.com/in/federico-cecchini-9514602b9/"><img src={window.matchMedia('(prefers-color-scheme: dark)') ? linkedin_dark : linkedin_light} alt="" className='w-6'/></a>
+                    <a href="https://www.instagram.com/osteopata_federico_cecchini/" onClick={() => ReactGA.event({ eventCategory: "Interaction Footer", eventAction: "Click", eventLabel: "Instagram" })}>
+                        <img src={window.matchMedia('(prefers-color-scheme: dark)') ? instagram_dark : instagram_light} alt="" className='w-6'/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/federico-cecchini-9514602b9/" onClick={() => ReactGA.event({ eventCategory: "Interaction Footer", eventAction: "Click", eventLabel: "LinkedIn" })}>
+                        <img src={window.matchMedia('(prefers-color-scheme: dark)') ? linkedin_dark : linkedin_light} alt="" className='w-6'/>
+                    </a>
                 </div>
             </section>
             <hr />
@@ -33,7 +38,7 @@ function Footer() {
                 <h1>Federico Cecchini. {t("footer.all_rights")}</h1>
                 <section className='md:flex md:gap-3'>
                     <p>P.IVA: 12057580016</p>
-                    <p>Privacy Policy</p>
+                    <Link to={"https://www.iubenda.com/privacy-policy/85031061/legal"}>Privacy Policy</Link>
                 </section>
             </div>
         </footer>

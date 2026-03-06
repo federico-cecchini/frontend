@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import ReactGA from 'react-ga4'
 
 import '../App.css'
 
-function Paragraph({text}) {
+function Paragraph({text, category}) {
     const [isExpanded, setIsExpanded] = useState(false)
     const [showButton, setShowButton] = useState(false)
     const pRef = useRef(null)
@@ -40,7 +41,16 @@ function Paragraph({text}) {
             </section>
             {showButton && (
                 <button 
-                    onClick={() => setIsExpanded(!isExpanded)}
+                    onClick={() => {
+                        setIsExpanded(!isExpanded)
+                        if (category) {
+                            ReactGA.event({
+                                eventCategory: category,
+                                eventAction: "Click",
+                                eventLabel: isExpanded ? "Aperto" : "Chiuso",
+                            })
+                        }
+                    }}
                     className="text-blue-500 text-sm mt-2"
                 >
                     {isExpanded ? t("show_less") : t("show_more")}
