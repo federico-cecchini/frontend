@@ -2,13 +2,14 @@ import { useTranslation } from 'react-i18next'
 
 import CTA from './CTA'
 import SecondaryButton from './SecondaryButton'
+import BackGround from '../assets/background.jpg'
 import '../App.css'
 
 function Hero({title, subtitle, image, text}) {
     const { t } = useTranslation()
 
     return (
-        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between gap-10' : 'justify-center'} bg-[60%] bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('./logo.svg') `}}>
+        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between gap-10' : 'justify-center'} bg-[60%] bg-no-repeat`} style={{backgroundImage: `url(${BackGround}), url('./logo.svg') `}}>
             <div className='flex flex-col gap-10'>
                 <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl flex flex-col gap-2 ${image ? 'text-left' : 'text-center'}`}>
                     {
@@ -30,7 +31,7 @@ function Hero({title, subtitle, image, text}) {
                     <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={t("hero.times")} category={"Orari"}/>
                 </div>
             </div>
-            {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 rounded-xl object-cover" />}
+            {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 rounded-xl object-cover opacity-80" />}
         </section>
     )
 }
