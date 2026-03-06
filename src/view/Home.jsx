@@ -8,6 +8,7 @@ import TimeTable from '../components/TimeTable'
 import Testimonials from '../components/Testimonials'
 import Place from '../components/Place'
 import Footer from '../components/Footer'
+import HomeImage from '../assets/home.jpeg'
 import '../App.css'
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
     return(
         <>
             <Nav />
-            <Hero title={t("view_home.hero.title")} subtitle={t("view_home.hero.subtitle")} text={t("view_home.hero.text")}/>
+            <Hero title={t("view_home.hero.title")} subtitle={t("view_home.hero.subtitle")} text={t("view_home.hero.text")} image={HomeImage}/>
             <section className='relative flex justify-center dark:bg-dark-bg h-[110vh] md:h-[15vh]'>
                 <Statistics years={9} patients={10000} percentage={100} hours={1200} office={2} suggested={95}/>
             </section>
