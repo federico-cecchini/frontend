@@ -2,36 +2,42 @@ import { useTranslation } from 'react-i18next'
 
 import CTA from './CTA'
 import SecondaryButton from './SecondaryButton'
-import BackgroundHero from '../assets/background.jpg'
+import BackGround from '../assets/background.jpg'
 import '../App.css'
 
 function Hero({title, subtitle, image, text}) {
     const { t } = useTranslation()
 
     return (
-        <section className={`py-16 px-6 xl:px-16 flex ${image ? 'justify-between gap-10' : 'justify-center'} bg-cover bg-center bg-no-repeat`} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url(${BackgroundHero})`}}>
-            <div className='flex flex-col gap-10'>
-                <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl ${image ? 'text-left' : 'text-center'}`}>
-                    {
-                        title.split('\\n').map((line, index) => (
-                            <h1 key={index}>{line}</h1>
-                        ))
-                    }
-                    <h1 className="bg-gradient-to-r from-gradient-start-bg to-white bg-clip-text text-transparent">{subtitle}</h1>
+        <section className={`py-16 px-6 xl:px-16 flex relative ${image ? 'justify-between gap-10' : 'justify-center'}`}>
+
+            <div className='absolute top-0 left-0 w-full h-full bg-no-repeat -z-20' style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url(${BackGround}) right`}}></div>
+            <div className='absolute top-0 left-0 w-full h-full -z-10' style={{background: `url('./logo.svg') no-repeat 60%`}}></div>
+
+            <section className='flex w-full justify-between relative z-10'>
+                <div className='flex flex-col gap-10'>
+                    <div className={`font-Poppins font-bold text-2xl text-white md:text-5xl flex flex-col gap-2 ${image ? 'text-left' : 'text-center'}`}>
+                        {
+                            title.split('\\n').map((line, index) => (
+                                <h1 key={index}>{line}</h1>
+                            ))
+                        }
+                        <h1 className="bg-gradient-to-r from-gradient-start-bg to-white bg-clip-text text-transparent">{subtitle}</h1>
+                    </div>
+                    <section className='md:text-3xl'>
+                        {
+                            text.split('\n').map((line, index) => (
+                                <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 text-xl ${image ? 'text-left' : 'text-center'}`}>{line}</p>
+                            ))
+                        }
+                    </section>
+                    <div className={`flex flex-col md:flex-row md:justify-center gap-3 ${image ? 'md:!justify-start' : ''}`}>
+                        <CTA to={'https://api.whatsapp.com/send/?phone=+393487069126&text=Buongiorno%2C%20vorrei%20prenotare%20una%20prima%20visita'} text={t("hero.contact")} target='_blank' category={"Contact WhatsApp"}/>
+                        <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={t("hero.times")} category={"Orari"}/>
+                    </div>
                 </div>
-                <section className='md:text-2xl'>
-                    {
-                        text.split('\n').map((line, index) => (
-                            <p key={index} className={`font-Montserrat font-normal text-white !text-opacity-55 text-xl ${image ? 'text-left' : 'text-center'}`}>{line}</p>
-                        ))
-                    }
-                </section>
-                <div className={`flex flex-col md:flex-row md:justify-center gap-3 ${image ? 'md:!justify-start' : ''}`}>
-                    <CTA to={'https://api.whatsapp.com/send/?phone=+393487069126&text=Buongiorno%2C%20vorrei%20prenotare%20una%20prima%20visita'} text={t("hero.contact")} target='_blank' category={"Contact WhatsApp"}/>
-                    <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={t("hero.times")} category={"Orari"}/>
-                </div>
-            </div>
-            {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 rounded-xl" />}
+                {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 rounded-xl object-cover opacity-80" />}
+            </section>
         </section>
     )
 }
