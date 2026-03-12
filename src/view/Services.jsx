@@ -13,6 +13,7 @@ import Pregnant from '../assets/pregnant.jpg'
 import Occlusion from '../assets/occlusion.jpg'
 import Sport from '../assets/sport.jpg'
 import Enf from '../assets/enf.jpg'
+import Kin from '../assets/kinesio.jpg'
 
 import '../App.css'
 
@@ -50,6 +51,11 @@ function Services() {
             img: Enf,
             title: t("view_service.service.enf.title"),
             description: t("view_service.service.enf.desc")
+        },
+        {
+            img: Kin,
+            title: t("view_service.service.kin.title"),
+            description: t("view_service.service.kin.desc")
         }
     ]
     
