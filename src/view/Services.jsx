@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 import Nav from '../components/Nav'
 import Hero from '../components/Hero'
@@ -92,6 +93,21 @@ function Services() {
 
     return (
         <>
+            <Helmet>
+                <title>Servizi | Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa</title>
+
+                <meta name="description" content="Servizi di osteopatia: trattamento muscolo-scheletrico, osteopatia pediatrica, gravidanza, sport, occlusione, kinesio taping ed elettroterapia ENF."/>
+
+                <meta property="og:title" content="Servizi | Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa"/>
+                <meta property="og:description" content="Servizi di osteopatia: trattamento muscolo-scheletrico, osteopatia pediatrica, gravidanza, sport, occlusione, kinesio taping ed elettroterapia ENF."/>
+                <meta property="og:image" content="https://osteopata-federico-cecchini.it/logo.svg"/>
+                <meta property="og:url" content="https://osteopata-federico-cecchini.it/services"/>
+                <meta property="og:site_name" content="Servizi | Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa"/>
+                <meta property="og:type" content="website"/>
+
+                <link rel="canonical" href="https://osteopata-federico-cecchini.it/services" />
+            </Helmet>
+
             <Nav />
             <Hero title={t("view_service.hero.title")} subtitle={t("view_service.hero.subtitle")} text={t("view_service.hero.text")} image={ServiceHero}/>
             <Article title={t("view_service.article.title")} text={t("view_service.article.text")} className={"bg-light-secondary-bg "} category={"Interaction Services Paragraph"}/>

@@ -1,7 +1,6 @@
 import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
 
-import CTA from './CTA'
 import '../App.css'
 
 function Nav() {
@@ -14,9 +13,9 @@ function Nav() {
                 <h1 className='font-Poppins font-bold text-2xl'>Dott. Federico Cecchini Osteopata D.O.</h1>
             </Link>
             <section className='flex gap-6 font-Poppins font-medium text-base items-center'>
-                <Link to={"/"} className='whitespace-nowrap'>Home</Link>
-                <Link to={"/about"} className='whitespace-nowrap'>{t("about")}</Link>
-                <CTA to={"/services"} text={t("service")}/>
+                <Link to={"/"} className={`whitespace-nowrap ${window.location.pathname === "/" ? "px-4 py-3 bg-cta-bg rounded-xl font-bold text-white font-Poppins" : ""}`}>Home</Link>
+                <Link to={"/about"} className={`whitespace-nowrap ${window.location.pathname === "/about" ? "px-4 py-3 bg-cta-bg rounded-xl font-bold text-white font-Poppins" : ""}`}>{t("about")}</Link>
+                <Link to={"/services"} className={`whitespace-nowrap ${window.location.pathname === "/services" ? "px-4 py-3 bg-cta-bg rounded-xl font-bold text-white font-Poppins" : ""}`}>{t("service")}</Link>
             </section>
         </nav>
     )
