@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 import Nav from '../components/Nav'
 import Hero from '../components/Hero'
@@ -7,7 +8,7 @@ import Article from '../components/Article'
 import Degree from '../components/Degree'
 import Footer from '../components/Footer'
 import PhotoGallery from '../components/PhotoGallery'
-import AboutHero from '../assets/about.jpg'
+import AboutHero from '../assets/generic.jpg'
 import Library from '../assets/library.jpg'
 import Degre from '../assets/degree.png'
 import Verify from '../assets/verify.png'
@@ -43,7 +44,23 @@ function About() {
 
     return (
         <>
+            <Helmet>
+                <title>Chi sono | Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa</title>
+
+                <meta name="description" content="Scopri il percorso professionale del Dott. Federico Cecchini, osteopata D.O. laureato in Scienze Motorie presso SUISM Torino e diplomato in osteopatia."/>
+
+                <meta property="og:title" content="Chi sono | Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa"/>
+                <meta property="og:description" content="Scopri il percorso professionale del Dott. Federico Cecchini, osteopata D.O. laureato in Scienze Motorie presso SUISM Torino e diplomato in osteopatia."/>
+                <meta property="og:image" content="https://osteopata-federico-cecchini.it/logo.svg"/>
+                <meta property="og:url" content="https://osteopata-federico-cecchini.it/about"/>
+                <meta property="og:site_name" content="Chi sono | Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa"/>
+                <meta property="og:type" content="website"/>
+
+                <link rel="canonical" href="https://osteopata-federico-cecchini.it/about" />
+            </Helmet>
+
             <PhotoGallery isOpen={isOpen} setIsClose={setIsOpen}/>
+
             <Nav />
             <Hero title={t("view_about.hero.title")} subtitle={t("view_about.hero.subtitle")} text={t("view_about.hero.text")} image={AboutHero}/>
             <section className='dark:!bg-dark-secondary-bg bg-light-secondary-bg flex flex-col xl:flex-row xl:py-28'>
