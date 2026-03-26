@@ -1,6 +1,7 @@
 import Marquee from 'react-fast-marquee'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
+import axios from "axios"
 
 import Card from './Card'
 import '../App.css'
@@ -9,6 +10,7 @@ function Testimonials() {
     const { t } = useTranslation()
 
     const [canHover, setCanHover] = useState(false);
+    const [reviews, setReviews] = useState([])
 
     useEffect(() => {
         const media = window.matchMedia("(hover: hover)");
@@ -20,13 +22,27 @@ function Testimonials() {
         return () => media.removeEventListener("change", listener);
     }, []);
 
+    useEffect(() => {
+        async function getReviews() {
+            const revs = await axios.get("https://backend-gamma-kohl-94.vercel.app/api/reviews")
+            setReviews(revs.data.reviews)
+            console.log(revs);
+            
+        }
+        getReviews()
+        
+    }, [])
+
     return(
         <div className='flex flex-col gap-12 py-12 px-6 dark:bg-dark-bg'>
             <h1 className='dark:text-white text-black text-center text-3xl font-bold font-Poppins underline underline-offset-4 decoration-cta-bg decoration-[5px]'>{t("view_home.testimonials.title")}</h1>
             <Marquee pauseOnHover={canHover} gradient={false} speed={25} autoFill={true} className='gap-8 p-5' >
-                <Card text={"Un approccio umano che mette subito a proprio agio. Lo studio è accogliente e pulito. Consigliatissimo!"} author={"Marco R."} role={"Paziente verificato"} image={"./vite.svg"} />
-                <Card text={"Mi ha aiutato a recuperare dopo un infortunio sportivo. Molto preparato e sempre disponibile."} author={"Giulia M."} role={"Paziente verificato"} image={"./vite.svg"} />
-                <Card text={"Federico è un professionista eccezionale. Ha risolto il mio mal di schiena cronico con poche sedute..."} author={"Mina G."} role={"Paziente verificato"} image={"./vite.svg"} />
+                {   reviews &&
+                    reviews.filter(review => review.comment)
+                        .map((review, index) => (
+                            <Card key={index} index={index} text={review.comment} author={review.reviewer.displayName} role={"Paziente verificato"} image={review.reviewer.profilePhotoUrl} />
+                        ))
+                }
             </Marquee>
         </div>
     )
