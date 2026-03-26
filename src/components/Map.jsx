@@ -10,7 +10,7 @@ function MapContent() {
     const map = useMap();
     const { t } = useTranslation()
 
-    const markers =[
+    const markers = [
         {position: [45.07292308205829, 7.572681564257071], popup: `${t("view_home.places.minghetti.title")}<br/>${t("view_home.places.minghetti.address")}<br/>${t("view_home.places.minghetti.floor")}`},
         {position: [45.13606767600684, 7.047339681873459], popup: `${t("view_home.places.canavoso.title")}<br/>${t("view_home.places.canavoso.address")}`},
     ]
