@@ -4,7 +4,7 @@
   "footer": {
     "all_rights": "All rights reserved"
   },
-    "hero": {
+  "hero": {
     "contact": "Contact me",
     "times": "Discover the timetables"
   },
@@ -110,6 +110,10 @@
       "enf": {
         "title": "ENF Therapy",
         "desc": "It is an innovative electrotherapy that penetrates even the deepest points, offering unmatched precision. Thanks to generated frequencies, it precisely identifies sources of pain and initiates a body rebalancing therapy. This regular wave modulation process promotes the bioelectric harmony of cellular membranes, essential for affected tissues."
+      },
+      "kin": {
+        "title": "Kinesio Taping",
+        "desc": "Kinesio Taping is an elastic taping technique that supports muscles, joints, and connective tissues while promoting blood and lymphatic circulation. It helps reduce pain, improve function, and accelerate recovery from injuries or muscle fatigue."
       }
     },
     "faqs": {

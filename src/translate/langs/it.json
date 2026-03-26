@@ -76,7 +76,7 @@
     "hero": {
       "title": "Osteopatia:",
       "subtitle": "scienza, manualità e ascolto",
-      "text": "Un approccio osteopatico che unisce rigore scientifico, praticità ed empatia profonda per il benessere del paziente. Il mio obiettivo non è solo curare la causa. ma comprendere la persona."
+      "text": "Un approccio osteopatico che unisce rigore scientifico, praticità ed empatia profonda per il benessere del paziente.\nIl mio obiettivo non è solo curare la causa. ma comprendere la persona."
     },
     "article": {
       "title": "Formazione e Titoli",
@@ -110,6 +110,10 @@
       "enf": {
         "title": "Terapia ENF",
         "desc": "È un'innovativa elettroterapia che penetra anche nei punti più reconditi, offrendo precisione ineguagliabile.Grazie alle frequenze generate, individua con precisione le fonti di dolore, avviando una terapia di riequilibrio corporeo. Questo processo regolare di modulazione delle onde promuove l’armonia bioelettrica delle membrane cellulari, fondamentali per i tessuti interessati."
+      },
+      "kin": {
+        "title": "Kinesio Taping",
+        "desc": "Il Kinesio Taping è una tecnica di bendaggio elastico che supporta i muscoli, le articolazioni e i tessuti connettivi, favorendo la circolazione sanguigna e linfatica. Aiuta a ridurre il dolore, migliorare la funzionalità e accelerare il recupero da infortuni o affaticamento muscolare."
       }
     },
     "faqs": {

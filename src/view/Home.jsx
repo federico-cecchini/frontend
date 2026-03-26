@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 import Nav from '../components/Nav'
 import Hero from '../components/Hero'
@@ -16,6 +17,21 @@ function Home() {
 
     return(
         <>
+            <Helmet>
+                <title>Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa</title>
+
+                <meta name="description" content="Osteopatia a Torino, Collegno e Susa: Trattamenti per il benessere e per l'equilibrio del corpo. Approccio osteopatico che unisce rigore scientifico, praticità ed empatia."/>
+
+                <meta property="og:title" content="Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa"/>
+                <meta property="og:description" content="Osteopatia a Torino, Collegno e Susa: Trattamenti per il benessere e per l'equilibrio del corpo. Approccio osteopatico che unisce rigore scientifico, praticità ed empatia."/>
+                <meta property="og:image" content="https://osteopata-federico-cecchini.it/logo.svg"/>
+                <meta property="og:url" content="https://osteopata-federico-cecchini.it/"/>
+                <meta property="og:site_name" content="Dott. Federico Cecchini Osteopata D.O. | Torino - Collegno - Susa"/>
+                <meta property="og:type" content="website"/>
+
+                <link rel="canonical" href="https://osteopata-federico-cecchini.it/" />
+            </Helmet>
+
             <Nav />
             <Hero title={t("view_home.hero.title")} subtitle={t("view_home.hero.subtitle")} text={t("view_home.hero.text")} image={HomeImage}/>
             <section className='relative flex justify-center dark:bg-dark-bg h-[110vh] md:h-[15vh]'>

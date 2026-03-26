@@ -11,7 +11,7 @@ function Hero({title, subtitle, image, text}) {
     return (
         <section className={`py-16 px-6 xl:px-16 flex relative ${image ? 'justify-between gap-10' : 'justify-center'}`}>
 
-            <div className='absolute top-0 left-0 w-full h-full bg-no-repeat -z-20' style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url(${BackGround}) right`}}></div>
+            <div className='absolute top-0 left-0 w-full h-full -z-20' style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url(${BackGround}) right no-repeat`, backgroundSize: 'cover'}}></div>
             <div className='absolute top-0 left-0 w-full h-full -z-10' style={{background: `url('./logo.svg') no-repeat 60%`}}></div>
 
             <section className='flex w-full justify-between relative z-10'>
@@ -36,7 +36,7 @@ function Hero({title, subtitle, image, text}) {
                         <SecondaryButton to={'/#timeTable:~:text=Chiuso-,Orari%20di%20Apertura,-Ricevo%20su%20appuntamento'} text={t("hero.times")} category={"Orari"}/>
                     </div>
                 </div>
-                {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 rounded-xl object-cover opacity-80" />}
+                {image && <img src={image} alt="Hero Image" className="hidden xl:block w-96 h-96 bg-black rounded-xl aspect-square object-cover" />}
             </section>
         </section>
     )
